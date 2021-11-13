@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Анимация 1</title>
+	<style>
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;  
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {background-color: red;}
+    20%  {background-color: yellow;width: 150px;}
+    40%  {background-color: black;}
+    60%  {background-color: blue;width: 150px;}
+    80% {background-color: green;}
+    100% {background-color: dodgerblue;}
+}
+</style>
+</head>
+<body>
+<p>Это не работает в IE 9.0 и ниже</p>
+<div></div>
+</body>
+</html>
